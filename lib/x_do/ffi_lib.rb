@@ -6,7 +6,12 @@ class XDo
 # FFI to the raw libxdo functions.
 module FFILib
   extend FFI::Library
-  ffi_lib 'libxdo.so'
+
+  begin
+    ffi_lib 'libxdo.so.3'
+  rescue FFI::NotFoundError
+    ffi_lib 'libxdo.so'
+  end
   
   # :nodoc: lifted from xdo.h
   class XDoContext < FFI::Struct
