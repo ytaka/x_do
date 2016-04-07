@@ -9,7 +9,7 @@ module FFILib
 
   begin
     ffi_lib 'libxdo.so.3'
-  rescue FFI::NotFoundError
+  rescue FFI::NotFoundError, LoadError
     ffi_lib 'libxdo.so'
   end
 
