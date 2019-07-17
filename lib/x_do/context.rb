@@ -28,7 +28,9 @@ class XDo
   
   # The display name for the current context.
   def display_name
-    @_context[:display_name]
+    # 2019-07-17: @_context[:display_name] is not set in xdo.c.
+    # Alternatively, we get display name from xdpy via Xlib.XDisplayString.
+    Xlib.XDisplayString(@_context[:xdpy])
   end
   
   # The underlying libxdo context structure.

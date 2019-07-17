@@ -2,6 +2,8 @@
 class XDo
 end  # namespace XDo
 
+require "xlib"
+
 require 'x_do/context.rb'
 require 'x_do/mouse.rb'
 require 'x_do/keyboard.rb'

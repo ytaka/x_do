@@ -19,6 +19,8 @@ module FFILib
            :display_name, :string,
            :charcodes, :pointer,
            :charcodes_len, :int,
+           :modmap, :pointer,
+           :keymap, :pointer,
            :keycode_high, :int,
            :keycode_low, :int,
            :keysyms_per_keycode, :int,
