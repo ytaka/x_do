@@ -3,6 +3,7 @@ PATH
   specs:
     x_do (0.1.2)
       ffi (>= 1.0.0)
+      xlib (>= 1.2.0)
 
 GEM
   remote: http://rubygems.org/
@@ -80,6 +81,8 @@ GEM
     simplecov-rcov (0.2.3)
       simplecov (>= 0.4.1)
     thread_safe (0.3.6)
+    xlib (1.2.0)
+      ffi (~> 1.9)
 
 PLATFORMS
   ruby
