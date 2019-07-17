@@ -51,6 +51,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.15"
   s.summary = "Ruby FFI for libxdo (X mouse / keypress injector)"
   s.add_runtime_dependency('ffi', [">= 1.0.0"])
+  s.add_runtime_dependency('xlib', [">= 1.2.0"])
   s.add_development_dependency('rdoc', [">= 3.12"])
   s.add_development_dependency('rspec', [">= 2.8.0"])
   s.add_development_dependency('rspec-collection_matchers', ['>= 0'])
